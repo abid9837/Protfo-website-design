@@ -1,0 +1,202 @@
+/* section -3 start */
+.section-3{
+    width: 100%;
+    height:auto;
+    background: #F3FAFF;
+  
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+   
+}
+.section-3-heding{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+}
+ 
+.section-3-card{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 8rem;
+    width: 95%;
+   
+   
+   }
+   .section-3-card-detilies{
+   width: 48%;
+    background: #FFF;
+    margin-left: 2rem;
+   padding-bottom: 5rem;
+    text-align: center;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-radius: 1rem;
+   }
+   .section-3-card-detilies-img i{
+    font-size: 2.2rem;
+    border-radius: 50%;
+    background: rgb(144, 120, 120);
+    padding: 1.5rem;
+    margin-top: 3rem;
+    
+    }
+    .section-3-card-detilies-heding h2{
+        padding-top: 2.5rem;
+        padding-bottom: 1.5rem;
+        font-size: 2.13rem;
+    }
+    .section-3-card-detilies-detilies p{
+       
+        text-align:center;
+        padding: .3rem;
+        opacity: .7;
+        font-size: 1rem;
+        
+    }
+    
+   .section-3-button{
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+.section-3-button button{
+    padding: 1.5rem 2.5rem;
+    background: rgb(51, 61, 200);
+    border-radius: 5rem;
+    color: #FFF;
+    border: none;
+    margin-bottom: 3rem;
+    
+}
+
+/* section-3 end */
+
+/* <!-- section -11 start --> */
+
+.section-11{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.section-11-pbox{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 8rem;
+    flex-wrap: wrap;
+    
+}
+.section-11-pbox-box{
+    width: 70%;
+    height: auto;
+    display: flex;
+    padding-left: 2.5rem;
+    text-align: left;
+    flex-direction: column;
+    margin-left: 2%;
+   /* background: rgb(147, 75, 75); */
+   margin-bottom: 1rem;
+
+}
+.section-11-pbox-box h1{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+
+   
+}
+.section-11-pbox-box p{
+   
+    margin-bottom: 1rem;
+    
+    font-size: 1.3rem;
+
+}
+
+.section-11-pbox-box h2 i{
+    margin-top: 1.8rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+
+    margin-right: 2%;
+}
+.section-11-pbox-box-btn-1{
+    width: 60%;
+    height: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    background-color: Transparent;
+
+   font-size: 1rem;
+}
+.section-11-pbox-box-butotn{
+    width: 80%;
+    display: flex;
+  
+    
+}
+.section-11-pbox-box-butotn-btn1{
+    width: 40%;
+    height: auto;
+    margin-right:.4rem;
+    margin-bottom: .4rem;
+}
+.section-11-pbox-box-butotn-btn1 button{
+    width: 100%;
+    font-size: 1.1rem;
+
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+
+    background:transparent;
+    
+}
+.section-11-pbox-box-butotn-btn2{
+    width: 60%;
+  
+  
+    margin-bottom: .4rem;
+}
+.section-11-pbox-box-butotn-btn2 button{
+    width: 100%;
+    font-size: 1.1rem;
+
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+
+    background:transparent;
+}
+.section-11-foder{
+    width: 68%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: .3rem;
+}
+.section-11-foder-h1{
+   width: 100%;
+}
+.section-11-foder-h1 h1{}
+.section-11-foder-h2 {
+    width: 100%;
+}
+.section-11-foder-h2 h2{}
+
+
+
+/* <!-- section -11 end --> */

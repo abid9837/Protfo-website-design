@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./media quary .css">
+    <!--Shahariar part's-->
+    <script>
+        window.FontAwesomeKitConfig = { "asyncLoading": { "enabled": false }, "autoA11y": { "enabled": true }, "baseUrl": "https://ka-f.fontawesome.com", "baseUrlKit": "https://kit.fontawesome.com", "detectConflictsUntil": null, "iconUploads": {}, "id": 101354374, "license": "free", "method": "css", "minify": { "enabled": true }, "token": "52701a04fb", "v4FontFaceShim": { "enabled": true }, "v4shim": { "enabled": true }, "v5FontFaceShim": { "enabled": true }, "version": "6.1.1" };
+        !function (t) { "function" == typeof define && define.amd ? define("kit-loader", t) : t() }((function () { "use strict"; function t(e) { return (t = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) { return typeof t } : function (t) { return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t })(e) } function e(t, e, n) { return e in t ? Object.defineProperty(t, e, { value: n, enumerable: !0, configurable: !0, writable: !0 }) : t[e] = n, t } function n(t, e) { var n = Object.keys(t); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(t); e && (o = o.filter((function (e) { return Object.getOwnPropertyDescriptor(t, e).enumerable }))), n.push.apply(n, o) } return n } function o(t) { for (var o = 1; o < arguments.length; o++) { var r = null != arguments[o] ? arguments[o] : {}; o % 2 ? n(Object(r), !0).forEach((function (n) { e(t, n, r[n]) })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : n(Object(r)).forEach((function (e) { Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e)) })) } return t } function r(t, e) { return function (t) { if (Array.isArray(t)) return t }(t) || function (t, e) { if ("undefined" == typeof Symbol || !(Symbol.iterator in Object(t))) return; var n = [], o = !0, r = !1, i = void 0; try { for (var c, a = t[Symbol.iterator](); !(o = (c = a.next()).done) && (n.push(c.value), !e || n.length !== e); o = !0); } catch (t) { r = !0, i = t } finally { try { o || null == a.return || a.return() } finally { if (r) throw i } } return n }(t, e) || function (t, e) { if (!t) return; if ("string" == typeof t) return i(t, e); var n = Object.prototype.toString.call(t).slice(8, -1); "Object" === n && t.constructor && (n = t.constructor.name); if ("Map" === n || "Set" === n) return Array.from(t); if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return i(t, e) }(t, e) || function () { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.") }() } function i(t, e) { (null == e || e > t.length) && (e = t.length); for (var n = 0, o = new Array(e); n < e; n++)o[n] = t[n]; return o } function c(t, e) { var n = e && e.addOn || "", o = e && e.baseFilename || t.license + n, r = e && e.minify ? ".min" : "", i = e && e.fileSuffix || t.method, c = e && e.subdir || t.method; return t.baseUrl + "/releases/" + ("latest" === t.version ? "latest" : "v".concat(t.version)) + "/" + c + "/" + o + r + "." + i } function a(t) { return t.baseUrlKit + "/" + t.token + "/" + t.id + "/kit-upload.css" } function u(t, e) { var n = e || ["fa"], o = "." + Array.prototype.join.call(n, ",."), r = t.querySelectorAll(o); Array.prototype.forEach.call(r, (function (e) { var n = e.getAttribute("title"); e.setAttribute("aria-hidden", "true"); var o = !e.nextElementSibling || !e.nextElementSibling.classList.contains("sr-only"); if (n && o) { var r = t.createElement("span"); r.innerHTML = n, r.classList.add("sr-only"), e.parentNode.insertBefore(r, e.nextSibling) } })) } var f, s = function () { }, d = "undefined" != typeof global && void 0 !== global.process && "function" == typeof global.process.emit, l = "undefined" == typeof setImmediate ? setTimeout : setImmediate, h = []; function m() { for (var t = 0; t < h.length; t++)h[t][0](h[t][1]); h = [], f = !1 } function p(t, e) { h.push([t, e]), f || (f = !0, l(m, 0)) } function v(t) { var e = t.owner, n = e._state, o = e._data, r = t[n], i = t.then; if ("function" == typeof r) { n = "fulfilled"; try { o = r(o) } catch (t) { w(i, t) } } y(i, o) || ("fulfilled" === n && b(i, o), "rejected" === n && w(i, o)) } function y(e, n) { var o; try { if (e === n) throw new TypeError("A promises callback cannot return that same promise."); if (n && ("function" == typeof n || "object" === t(n))) { var r = n.then; if ("function" == typeof r) return r.call(n, (function (t) { o || (o = !0, n === t ? g(e, t) : b(e, t)) }), (function (t) { o || (o = !0, w(e, t)) })), !0 } } catch (t) { return o || w(e, t), !0 } return !1 } function b(t, e) { t !== e && y(t, e) || g(t, e) } function g(t, e) { "pending" === t._state && (t._state = "settled", t._data = e, p(S, t)) } function w(t, e) { "pending" === t._state && (t._state = "settled", t._data = e, p(O, t)) } function A(t) { t._then = t._then.forEach(v) } function S(t) { t._state = "fulfilled", A(t) } function O(t) { t._state = "rejected", A(t), !t._handled && d && global.process.emit("unhandledRejection", t._data, t) } function j(t) { global.process.emit("rejectionHandled", t) } function E(t) { if ("function" != typeof t) throw new TypeError("Promise resolver " + t + " is not a function"); if (this instanceof E == !1) throw new TypeError("Failed to construct 'Promise': Please use the 'new' operator, this object constructor cannot be called as a function."); this._then = [], function (t, e) { function n(t) { w(e, t) } try { t((function (t) { b(e, t) }), n) } catch (t) { n(t) } }(t, this) } E.prototype = { constructor: E, _state: "pending", _then: null, _data: void 0, _handled: !1, then: function (t, e) { var n = { owner: this, then: new this.constructor(s), fulfilled: t, rejected: e }; return !e && !t || this._handled || (this._handled = !0, "rejected" === this._state && d && p(j, this)), "fulfilled" === this._state || "rejected" === this._state ? p(v, n) : this._then.push(n), n.then }, catch: function (t) { return this.then(null, t) } }, E.all = function (t) { if (!Array.isArray(t)) throw new TypeError("You must pass an array to Promise.all()."); return new E((function (e, n) { var o = [], r = 0; function i(t) { return r++, function (n) { o[t] = n, --r || e(o) } } for (var c, a = 0; a < t.length; a++)(c = t[a]) && "function" == typeof c.then ? c.then(i(a), n) : o[a] = c; r || e(o) })) }, E.race = function (t) { if (!Array.isArray(t)) throw new TypeError("You must pass an array to Promise.race()."); return new E((function (e, n) { for (var o, r = 0; r < t.length; r++)(o = t[r]) && "function" == typeof o.then ? o.then(e, n) : e(o) })) }, E.resolve = function (e) { return e && "object" === t(e) && e.constructor === E ? e : new E((function (t) { t(e) })) }, E.reject = function (t) { return new E((function (e, n) { n(t) })) }; var _ = "function" == typeof Promise ? Promise : E; function F(t, e) { var n = e.fetch, o = e.XMLHttpRequest, r = e.token, i = t; return "URLSearchParams" in window ? (i = new URL(t)).searchParams.set("token", r) : i = i + "?token=" + encodeURIComponent(r), i = i.toString(), new _((function (t, e) { if ("function" == typeof n) n(i, { mode: "cors", cache: "default" }).then((function (t) { if (t.ok) return t.text(); throw new Error("") })).then((function (e) { t(e) })).catch(e); else if ("function" == typeof o) { var r = new o; r.addEventListener("loadend", (function () { this.responseText ? t(this.responseText) : e(new Error("")) }));["abort", "error", "timeout"].map((function (t) { r.addEventListener(t, (function () { e(new Error("")) })) })), r.open("GET", i), r.send() } else { e(new Error("")) } })) } function P(t, e, n) { var o = t; return [[/(url\("?)\.\.\/\.\.\/\.\./g, function (t, n) { return "".concat(n).concat(e) }], [/(url\("?)\.\.\/webfonts/g, function (t, o) { return "".concat(o).concat(e, "/releases/v").concat(n, "/webfonts") }], [/(url\("?)https:\/\/kit-free([^.])*\.fontawesome\.com/g, function (t, n) { return "".concat(n).concat(e) }]].forEach((function (t) { var e = r(t, 2), n = e[0], i = e[1]; o = o.replace(n, i) })), o } function C(t, e) { var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : function () { }, r = e.document || r, i = u.bind(u, r, ["fa", "fab", "fas", "far", "fal", "fad", "fak"]), f = Object.keys(t.iconUploads || {}).length > 0; t.autoA11y.enabled && n(i); var s = [{ id: "fa-main", addOn: void 0 }]; t.v4shim && t.v4shim.enabled && s.push({ id: "fa-v4-shims", addOn: "-v4-shims" }), t.v5FontFaceShim && t.v5FontFaceShim.enabled && s.push({ id: "fa-v5-font-face", addOn: "-v5-font-face" }), t.v4FontFaceShim && t.v4FontFaceShim.enabled && s.push({ id: "fa-v4-font-face", addOn: "-v4-font-face" }), f && s.push({ id: "fa-kit-upload", customCss: !0 }); var d = s.map((function (n) { return new _((function (r, i) { F(n.customCss ? a(t) : c(t, { addOn: n.addOn, minify: t.minify.enabled }), e).then((function (i) { r(U(i, o(o({}, e), {}, { baseUrl: t.baseUrl, version: t.version, id: n.id, contentFilter: function (t, e) { return P(t, e.baseUrl, e.version) } }))) })).catch(i) })) })); return _.all(d) } function U(t, e) { var n = e.contentFilter || function (t, e) { return t }, o = document.createElement("style"), r = document.createTextNode(n(t, e)); return o.appendChild(r), o.media = "all", e.id && o.setAttribute("id", e.id), e && e.detectingConflicts && e.detectionIgnoreAttr && o.setAttributeNode(document.createAttribute(e.detectionIgnoreAttr)), o } function k(t, e) { e.autoA11y = t.autoA11y.enabled, "pro" === t.license && (e.autoFetchSvg = !0, e.fetchSvgFrom = t.baseUrl + "/releases/" + ("latest" === t.version ? "latest" : "v".concat(t.version)) + "/svgs", e.fetchUploadedSvgFrom = t.uploadsUrl); var n = []; return t.v4shim.enabled && n.push(new _((function (n, r) { F(c(t, { addOn: "-v4-shims", minify: t.minify.enabled }), e).then((function (t) { n(I(t, o(o({}, e), {}, { id: "fa-v4-shims" }))) })).catch(r) }))), n.push(new _((function (n, r) { F(c(t, { minify: t.minify.enabled }), e).then((function (t) { var r = I(t, o(o({}, e), {}, { id: "fa-main" })); n(function (t, e) { var n = e && void 0 !== e.autoFetchSvg ? e.autoFetchSvg : void 0, o = e && void 0 !== e.autoA11y ? e.autoA11y : void 0; void 0 !== o && t.setAttribute("data-auto-a11y", o ? "true" : "false"); n && (t.setAttributeNode(document.createAttribute("data-auto-fetch-svg")), t.setAttribute("data-fetch-svg-from", e.fetchSvgFrom), t.setAttribute("data-fetch-uploaded-svg-from", e.fetchUploadedSvgFrom)); return t }(r, e)) })).catch(r) }))), _.all(n) } function I(t, e) { var n = document.createElement("SCRIPT"), o = document.createTextNode(t); return n.appendChild(o), n.referrerPolicy = "strict-origin", e.id && n.setAttribute("id", e.id), e && e.detectingConflicts && e.detectionIgnoreAttr && n.setAttributeNode(document.createAttribute(e.detectionIgnoreAttr)), n } function L(t) { var e, n = [], o = document, r = o.documentElement.doScroll, i = (r ? /^loaded|^c/ : /^loaded|^i|^c/).test(o.readyState); i || o.addEventListener("DOMContentLoaded", e = function () { for (o.removeEventListener("DOMContentLoaded", e), i = 1; e = n.shift();)e() }), i ? setTimeout(t, 0) : n.push(t) } function T(t) { "undefined" != typeof MutationObserver && new MutationObserver(t).observe(document, { childList: !0, subtree: !0 }) } try { if (window.FontAwesomeKitConfig) { var x = window.FontAwesomeKitConfig, M = { detectingConflicts: x.detectConflictsUntil && new Date <= new Date(x.detectConflictsUntil), detectionIgnoreAttr: "data-fa-detection-ignore", fetch: window.fetch, token: x.token, XMLHttpRequest: window.XMLHttpRequest, document: document }, D = document.currentScript, N = D ? D.parentElement : document.head; (function () { var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}; return "js" === t.method ? k(t, e) : "css" === t.method ? C(t, e, (function (t) { L(t), T(t) })) : void 0 })(x, M).then((function (t) { t.map((function (t) { try { N.insertBefore(t, D ? D.nextSibling : null) } catch (e) { N.appendChild(t) } })), M.detectingConflicts && D && L((function () { D.setAttributeNode(document.createAttribute(M.detectionIgnoreAttr)); var t = function (t, e) { var n = document.createElement("script"); return e && e.detectionIgnoreAttr && n.setAttributeNode(document.createAttribute(e.detectionIgnoreAttr)), n.src = c(t, { baseFilename: "conflict-detection", fileSuffix: "js", subdir: "js", minify: t.minify.enabled }), n }(x, M); document.body.appendChild(t) })) })).catch((function (t) { console.error("".concat("Font Awesome Kit:", " ").concat(t)) })) } } catch (t) { console.error("".concat("Font Awesome Kit:", " ").concat(t)) } }));
+    </script>
+    <link rel="stylesheet" href="./file/index 2.css">
+    <link rel="stylesheet" media="screen and (max-width: 1250px)" href="./file/12desktops.css">
+    <link rel="stylesheet" media="screen and (max-width: 992px)" href="./file/desktops.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="./file/phone.css">
+    <link rel="stylesheet" media="screen and (max-width: 550px)" href="./file/sphone.css">
+    <link rel="stylesheet" media="screen and (max-width: 475px)" href="./file/s1phone.css">
+    <link rel="stylesheet" media="screen and (max-width: 400px)" href="./file/ssphone.css">
+</head>
+<body>
+
+    <div class="navbarForMobile_div_main">
+        <div class="Click_to_open_MAinNavBar_div">
+            <img src="" alt="">
+        </div>
+        <div class="company_logo_mobile_nav">
+            <img class="company_logo_open" src="./images/three-line-menu-icon-1.jpg" alt="">
+            <img class="company_logo_close" style="display: none;" src="./images/three-line-menu-icon-1.jpg" alt="">
+        </div>
+        <div class="logo_main">
+            <img src="./images/company logo.jpg" alt="">
+        </div>
+        <h4>website Title</h4>
+    </div>
+
+
+    <!-- Nav bar start -->
+    <div class="navBar_main_div">
+        <div class=" Logo_Nav"><img src="./images/company logo.jpg" alt=""></div><!--logo mav-->
+        <div class=" Navbar_website_TITLE_div"><h3>myView</h3></div><!-- website title  -->
+        <div class="Navbar_ALign_main_div">
+            <div class="navBAr_items_div"><p>About Me</p></div>
+            <div class="navBAr_items_div"><p>Services</p></div>
+            <div class="navBAr_items_div"><p>Protfolio</p></div>
+            <div class="navBAr_items_div"><p>Blog</p></div>
+            <div class="navBAr_items_div"><p>Contact Us</p></div>
+            <div class="navBAr_items_div Download_civi_div"><p>Download CV</p></div>
+        </div>
+    </div>
+    <!-- Nav bar end -->
+
+    <!--  Section 1 hero part Start  -->
+   <div class="Section1_main_div">
+        <div class="Section1_inner_flex_Left_div_main">
+            <div class="sec1leftdiv_inner_h4">
+                <h4>Hello</h4>
+            </div>
+            <!---->
+            <div class="sec1leftdiv_inner_h1_name_part" style="margin-top: 5rem;">
+                <h1>I'm Abidur Rahman</h1>
+            </div>
+            <div class="sec1leftdiv_inner_h1_name_part">
+                <h1 style="color: #F07CDA;">UI & UX Designer</h1>
+            </div>
+            <div class="sex1LeftDiv_pTag_text_justify">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos sint neque ab dolore blanditiis quasi vitae, ipsa eaque laborum hic maiores consequuntur fugiat quae optio corrupti. Reprehenderit obcaecati dignissimos quibusdam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere eos cumque voluptas dolorum non aliquid, consectetur pariatur, dolore corporis eveniet magnam ex quidem esse, nostrum fugiat omnis illo necessitatibus.</p>
+            </div>
+            <div class="section1_hireMe_div_main">
+                <div class="hireMe_div">
+                    <p>Hire Me</p>
+                </div>
+            </div>
+
+        </div>
+        
+        <!--gap-->
+        <div class="Section1_inner_flex_Right_div_main">
+            <img src="./images/Section 1 Right Div Img1.png" alt="">
+        </div>
+   </div> <!--  Section 1 hero part Start  END -->
+
+
+
+    <!--  Section 2 part Start  -->
+    <div class="section2_main_div">
+        <div class="section2_left_div_main">
+            <img src="./images/section 2 img .jpg" alt="">
+        </div>
+        <!--gap-->
+
+
+
+
+
+        <div class="section2_Right_div_main">
+            <div class="sec2_rightDiv_inner_div">
+                <div class="sec2_h3_div">
+                    <h3><span style="color: #168EC2;">Why You</span> <span style="color: #F07CDA;">Hire Me ?</span></h3>
+                </div>
+                <div class="sec2_p_text_main_div">
+                    <div class="sec2_p_text_div">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident in accusantium ad, fugit quo sint officia cum itaque rem velit magni laboriosam soluta autem hic quos aliquam corrupti suscipit nostrum, eos quod natus! Expedita repellendus maiores consectetur quis totam consequuntur officiis sit, veritatis nam iure odit saepe ipsam quod incidunt
+                            <span class="p_text_click_to_more">read more</span><span class="p_text_Show_more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident in accusantium ad, fugit quo sint officia cum itaque rem velit magni laboriosam soluta autem hic quos aliquam corrupti suscipit nostrum, eos quod natus! Expedita repellendus maiores consectetur quis totam consequuntur officiis sit, veritatis nam iure odit saepe ipsam quod incidunt</span>
+                            </p>
+                    </div>
+                </div>
+
+                <!--UI desing start progress bar -->
+                <div class="uiDesign_main_div">
+                    <div class="uidesgin_text">
+                        <h3>UI Design</h3>
+                    </div>
+                    <div class="uidesign_progressBar">
+                        <div class="ui_progressbar"></div>
+                    </div>
+                </div>
+                <!--UX desing start progress bar -->
+                <div class="uiDesign_main_div">
+                    <div class="uidesgin_text">
+                        <h3 style="color: #EF77D7;">UX Design</h3>
+                    </div>
+                    <div class="uidesign_progressBar">
+                        <div class="ux_progressbar"></div>
+                    </div>
+                </div>
+                <!--DEVLOPMENT desing start progress bar -->
+                <div class="uiDesign_main_div">
+                    <div class="uidesgin_text">
+                        <h3 style="color: #168EC2;">Devlopment</h3>
+                    </div>
+                    <div class="uidesign_progressBar">
+                        <div class="Devlopment_progressbar"></div>
+                    </div>
+                </div>
+                
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--Shahariar part Section 3-->
+    <section class="section-3">
+        <div class="section-3-heding">
+            <h2>Our services</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum   <br> explicabo nobis </p>
+        </div>
+        
+        <div class="section-3-card">
+            <div class="section-3-card-detilies">
+                <div class="section-3-card-detilies-img"><i style="background-color: rgb(0, 96, 0);"  class="fa-solid fa-database"></i></div>
+                <div class="section-3-card-detilies-heding"><h2>UI/Ux design</h2></div>
+                <div class="section-3-card-detilies-detilies"><p>Lorem ipsum dolor sit amet</p> <p>Lorem ipsum dolor sit amet.</p> <p>Lorem ipsum dolor sit amet.</p> </div>
+            </div>
+            <div class="section-3-card-detilies">
+                <div class="section-3-card-detilies-img"><i style="background-color: rgb(0, 143, 81);" class="fa-solid fa-database"></i></div>
+                <div class="section-3-card-detilies-heding"><h2>UI/Ux design</h2></div>
+                <div class="section-3-card-detilies-detilies"><p>Lorem ipsum dolor sit amet</p> <p>Lorem ipsum dolor sit amet.</p> <p>Lorem ipsum dolor sit amet.</p></div>
+            </div>
+            <div class="section-3-card-detilies">
+                <div class="section-3-card-detilies-img"><i style="background-color: lime;" class="fa-solid fa-database"></i></div> 
+                <div class="section-3-card-detilies-heding"><h2>UI/Ux design</h2></div>
+                <div class="section-3-card-detilies-detilies"><p>Lorem ipsum dolor sit amet</p> <p>Lorem ipsum dolor sit amet.</p> <p>Lorem ipsum dolor sit amet.</p></div>
+            </div>
+            <div class="section-3-card-detilies">
+                <div class="section-3-card-detilies-img"><i style="background-color: rgb(68, 148, 68);" class="fa-solid fa-bag-shopping"></i></div>
+                <div class="section-3-card-detilies-heding"><h2>UI/Ux design</h2></div>
+                <div class="section-3-card-detilies-detilies"><p>Lorem ipsum dolor sit amet</p> <p>Lorem ipsum dolor sit amet.</p> <p>Lorem ipsum dolor sit amet.</p></div>
+            </div>
+        </div>
+        <div class="section-3-button">
+            <button>View All Services</button>
+        </div>
+    </section>
+    <!--Shahariar part Section 3  END-->
+
+    <!--Section 4 -->
+    <section class="section-4">
+        <div class="section-4-heading">
+            <h2>Recent Works</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, sapiente!Lorem, ipsum</p>
+            <p>Lorem, ipsum dolor sit amet  Autem, sapiente!Lorem, ipsum</p>
+        </div>
+        
+        <div class="section-4-picture-area">
+            <div class="section-4-picture-area-home">
+                <div class="section-4-picture-area-home-ditilies">
+                    <img src="./picture/1 (2).jpg" alt="">
+                </div>
+                <div class="section-4-picture-area-home-ditilies">
+                    <img src="./picture/1 (3).jpg" alt="">
+                </div>
+                <div class="section-4-picture-area-home-ditilies">
+                    <img src="./picture/1 (3).jpg" alt="">
+                </div>
+                <div class="section-4-picture-area-home-ditilies">
+                    <img src="./picture/1 (4).jpg" alt="">
+                </div>
+                <div class="section-4-picture-area-home-ditilies">
+                    <img src="./picture/1 (2).jpg" alt="">
+                </div>
+                <div class="section-4-picture-area-home-ditilies">
+                    <img src="./picture/1 (2).jpg" alt="">
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        </section>
+    <!--Section 4 start-->
+
+
+
+    <!--Section 5 start -->
+<section class="section-5">
+    <div class="section-5-main">
+        <div class="section-5-p-box">
+            <div class="section-5-p-box-c-box">
+                <h1>120+</h1>
+                <p>Proct Done</p>
+            </div>
+        </div>
+        <div class="section-5-p-box">
+            <div class="section-5-p-box-c-box">
+                <h1>90+</h1>
+                <p>Active Proct </p>
+            </div>
+        </div>
+        <div class="section-5-p-box">
+            <div class="section-5-p-box-c-box">
+                <h1>100+</h1>
+                <p>Happy Client</p>
+            </div>
+        </div>
+        <div class="section-5-p-box">
+            <div class="section-5-p-box-c-box">
+                <h1>120+</h1>
+                <p>Award Win</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+    <!--Section 5 end -->
+
+    <!--SEction 6 start-->
+    <section class="section-6">
+
+        <div class="section-6-header">
+            <h2>service</h2>
+            <h1>Service Provide</h1>
+            <div class="section-6-hr-home">
+                <hr>
+            </div>
+        </div>
+        <div class="section-6-pbox">
+            <div class="section-6-pbox-cbox">
+                <div class="section-6-pbox-cbox-homebox">
+                    <div class="section-6-pbox-cbox-homebox-box">
+                        <h2>Basic</h2>
+                       
+                        <h1>$75</h1>
+                        <h4>Only PSD Service</h4>
+                       
+                        <hr>
+                        
+                        <p><i class="fa-solid fa-check"></i> GRAPHIC DESIGN</p>
+                        <p><i class="fa-solid fa-check"></i> Web Design</p>
+                        <p><i class="fa-solid fa-check"></i> UI/UX</p>
+                        <p><i class="fa-solid fa-check"></i> HTML/CSS</p>
+                        <p><i class="fa-solid fa-check"></i> SEO MARKATING</p>
+                        <p><i class="fa-solid fa-check"></i> BUSINESS IMPROVE</p>
+                        
+                        <button>Chose Plan</button>
+                    </div>
+                </div>
+                <div class="section-6-pbox-cbox-homebox">
+                    <div class="section-6-pbox-cbox-homebox-regular"><h3>Regular</h3></div>
+                    <div class="section-6-pbox-cbox-homebox-box">
+                        <h2>Basic</h2>
+                       
+                        <h1>$75</h1>
+                        <h4>Only PSD Service</h4>
+                       
+                        <hr>
+                        
+                        <p><i class="fa-solid fa-check"></i> GRAPHIC DESIGN</p>
+                        <p><i class="fa-solid fa-check"></i> Web Design</p>
+                        <p><i class="fa-solid fa-check"></i> UI/UX</p>
+                        <p><i class="fa-solid fa-check"></i> HTML/CSS</p>
+                        <p><i class="fa-solid fa-check"></i> SEO MARKATING</p>
+                        <p><i class="fa-solid fa-check"></i> BUSINESS IMPROVE</p>
+                        
+                        <button>Chose Plan</button>
+                    </div>
+                </div>
+                <div class="section-6-pbox-cbox-homebox">
+                    <div class="section-6-pbox-cbox-homebox-box">
+                        <h2>Basic</h2>
+                       
+                        <h1>$75</h1>
+                        <h4>Only PSD Service</h4>
+                       
+                        <hr>
+                        
+                        <p><i class="fa-solid fa-check"></i> GRAPHIC DESIGN</p>
+                        <p><i class="fa-solid fa-check"></i> Web Design</p>
+                        <p><i class="fa-solid fa-check"></i> UI/UX</p>
+                        <p><i class="fa-solid fa-check"></i> HTML/CSS</p>
+                        <p><i class="fa-solid fa-check"></i> SEO MARKATING</p>
+                        <p><i class="fa-solid fa-check"></i> BUSINESS IMPROVE</p>
+                        
+                        <button>Chose Plan</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        </section>
+    <!--SEction 6 end-->
+
+    <!-- Section 7 start here -->
+    <div class="section7_main_div">
+        <div class="sec7_1st_div"><h4>TESTIMONIALS</h4></div>
+        <div class="What_client_say_div">
+            <div class="whatClientSay_left_div">
+                <h2>What client Say</h2>
+            </div>
+            <!---->
+            <div class="whatClientSay_right_div">
+                <div class="sec7_arrow_div_left">
+                    <img style="transform: rotate(-37deg);" src="./images/right-arrow-icon-27.png" alt="">
+                </div>
+                <div class="sec7_arrow_div_right">
+                    <img style="transform: rotate(-45deg);" src="./images/right-arrow-icon-27.png" alt="">
+                </div>
+            </div>    
+        </div>
+        
+
+        <div class="section7Comment_div_Main">
+            <div class="sec7Comment_div_boDy_main">
+                <div class="comment_icon_and_rating_main_div">
+                    <div class="comment_icon_left_div">
+                        <div>
+                            <img src="./images/25663.png" alt="">
+                            <img src="./images/25663.png" alt="">
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="Rating_icon_right_div">
+                        <div>
+                            <img src="./images/reating icon.png" alt="">
+                            <img src="./images/reating icon.png" alt="">
+                            <img src="./images/reating icon.png" alt="">
+                            <img src="./images/reating icon.png" alt="">
+                            <img src="./images/reating icon.png" alt="">
+                            
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="Coment_text_Main_div">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, esse soluta nemo tempore veritatis cumque sequi assumenda? Nulla culpa eius quos nisi aperiam saepe impedit explicabo doloremque accusantium ut. Ipsa, corrupti nobis? Repudiandae nemo recusandae, dolor modi alias quod necessitatibus sit quis placeat quae ratione consequatur quas id omnis nesciunt?</p>
+                </div>
+                <!---->
+                <div class="User_img_and_icon_main_div">
+                    <div class="userImage_div_left">
+                        <img src="./images/user icon .png" alt="">
+                    </div>
+                    <!---->
+                    <div class="userName_div_right">
+                        <div class="sc7_Name_div1"><h3>Some One 1</h3></div>
+                        <div class="sc7_Positon_div2"><p>business manager ceo</p></div>
+                    </div>
+                </div>
+                
+
+            </div>
+            <!---->
+            <div class="sec7Comment_div_boDy_main">
+                <div class="comment_icon_and_rating_main_div">
+                    <div class="comment_icon_left_div">
+                        <div>
+                            <img src="./images/25663.png" alt="">
+                            <img src="./images/25663.png" alt="">
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="Rating_icon_right_div">
+                        <div>
+                            <img src="./images/reating icon.png" alt="">
+                            <img src="./images/reating icon.png" alt="">
+                            <img src="./images/reating icon.png" alt="">
+                            <img src="./images/reating icon.png" alt="">
+                            <img src="./images/reating icon.png" alt="">
+                            
+                        </div>
+                    </div>
+                </div>
+                 <!---->
+                 <div class="Coment_text_Main_div">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, esse soluta nemo tempore veritatis cumque sequi assumenda? Nulla culpa eius quos nisi aperiam saepe impedit explicabo doloremque accusantium ut. Ipsa, corrupti nobis? Repudiandae nemo recusandae, dolor modi alias quod necessitatibus sit quis placeat quae ratione consequatur quas id omnis nesciunt?</p>
+                </div>
+                                <!---->
+                                <div class="User_img_and_icon_main_div">
+                                    <div class="userImage_div_left">
+                                        <img src="./images/user icon .png" alt="">
+                                    </div>
+                                    <!---->
+                                    <div class="userName_div_right">
+                                        <div class="sc7_Name_div1"><h3>Some One 2</h3></div>
+                                        <div class="sc7_Positon_div2"><p>business manager ceo</p></div>
+                                    </div>
+                                </div>
+                
+
+
+
+            </div>
+            <!---->
+            <div class="sec7Comment_div_boDy_main">
+                <div class="comment_icon_and_rating_main_div">
+                    <div class="comment_icon_left_div">
+                        <div>
+                            <img src="./images/25663.png" alt="">
+                            <img src="./images/25663.png" alt="">
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="Rating_icon_right_div">
+                        <div>
+                            <img src="./images/reating icon.png" alt="">
+                            <img src="./images/reating icon.png" alt="">
+                            <img src="./images/reating icon.png" alt="">
+                            <img src="./images/reating icon.png" alt="">
+                            <img src="./images/reating icon.png" alt="">
+                            
+                        </div>
+                    </div>
+                </div>
+                 <!---->
+                 <div class="Coment_text_Main_div">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, esse soluta nemo tempore veritatis cumque sequi assumenda? Nulla culpa eius quos nisi aperiam saepe impedit explicabo doloremque accusantium ut. Ipsa, corrupti nobis? Repudiandae nemo recusandae, dolor modi alias quod necessitatibus sit quis placeat quae ratione consequatur quas id omnis nesciunt?</p>
+                </div>
+                <!---->
+                <div class="User_img_and_icon_main_div">
+                    <div class="userImage_div_left">
+                        <img src="./images/user icon .png" alt="">
+                    </div>
+                    <!---->
+                    <div class="userName_div_right">
+                        <div class="sc7_Name_div1"><h3>Some One 3</h3></div>
+                        <div class="sc7_Positon_div2"><p>business manager ceo</p></div>
+                    </div>
+                </div>            
+
+
+
+            </div>
+        </div>
+       <!---->
+        <div class="sec7_bottom_part_4dot">
+            <div></div>
+            <div></div>
+            <div style="background-color: #00BE96;width: 2.5rem; height: 2.5rem;"></div>
+            <div></div>
+            <div></div>
+        </div>
+
+    </div><!--  sectipn 7 end here   -->
+
+    <!--Section 8 start-->
+    <div class="Section8_main_div">
+        <div class="sec8_header_part_1">
+            <h4>Experience</h4>
+        </div>
+        <div class="sec8_header_part_2">
+            <h4>Experience</h4>
+        </div>
+        <div class="sec8_margindiv">
+            <div></div>
+        </div>
+        <!---->
+        <div class="sec8_WorkExperience_body_div_main">
+            <!--LEFT-->
+            <div  class="sec8_workExperience_left_div">
+                <div  >
+                    <div id="sec8_part_ptext_1"  class=" sec8left_div_p_text_div_1_left all_pText_div_sec8 all_pText_div_sec8_1_part ">
+                        <p>
+                            111111111    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, officiis soluta a necessitatibus nam accusamus ex, provident placeat praesentium, cupiditate libero numquam vitae dolores blanditiis tenetur rerum mollitia deleniti amet.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, officiis soluta a necessitatibus nam accusamus ex, provident placeat praesentium, cupiditate libero numquam vitae dolores blanditiis tenetur rerum mollitia deleniti amet.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, officiis soluta a necessitatibus nam accusamus ex, provident placeat praesentium, cupiditate libero numquam vitae dolores blanditiis tenetur rerum mollitia deleniti amet.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, officiis soluta a necessitatibus nam accusamus ex, provident placeat praesentium, cupiditate libero numquam vitae dolores blanditiis tenetur rerum mollitia deleniti amet.
+                        </p>
+                    </div>
+                </div>
+                <!---->
+                <!---->
+                <div class="company_details_left_side " id="sec8_part_Design_2">
+                    <h2>UI/UX Designer</h2>
+                    <p style="color: #00A78E;">Deveeexper Designer Team</p>
+                    <p>March 2020 - September - 2021</p>
+                </div>
+                <!---->
+                <!---->
+                <div  class="text_div3 " >
+                    <div class="sec8left_div_p_text_div_RIGHT_2 all_pText_div_sec8" id="sec8_part_ptext_3">
+                        <p>
+                            33333333  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, officiis soluta a necessitatibus nam accusamus ex, provident placeat praesentium, cupiditate libero numquam vitae dolores blanditiis tenetur rerum mollitia deleniti amet.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, officiis soluta a necessitatibus nam accusamus ex, provident placeat praesentium, cupiditate libero numquam vitae dolores blanditiis tenetur rerum mollitia deleniti amet.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, officiis soluta a necessitatibus nam accusamus ex, provident placeat praesentium, cupiditate libero numquam vitae dolores blanditiis tenetur rerum mollitia deleniti amet.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, officiis soluta a necessitatibus nam accusamus ex, provident placeat praesentium, cupiditate libero numquam vitae dolores blanditiis tenetur rerum mollitia deleniti amet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--MIDDLE-->
+            <div class="sec8_workExperience_Middile_div">
+                <div class="middle_div">
+                    <div class="circle1"><p>01</p></div>
+                    <div class="circle2"><p>02</p></div>
+                    <div class="circle3"><p>03</p></div>
+                </div>
+            </div>
+            <!--RIGHT-->
+            <div class="sec8_workExperience_Righr_div">
+                <div class="company_details_right_side sec8_part_Design_1">
+                    <h2>Graphic Designer</h2>
+                    <p style="color: #00A78E;">Team Orio Designer Team</p>
+                    <p>March 2021 - August - 2022</p>
+                </div>
+                <!---->
+                <div class="Text_div2 ">
+                    <div class="sec8left_div_p_text_div_RIGHT_2 all_pText_div_sec8 sec8_part_ptext_2">
+                        <p>222222222   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, officiis soluta a necessitatibus nam accusamus ex, provident placeat praesentium, cupiditate libero numquam vitae dolores blanditiis tenetur rerum mollitia deleniti amet.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, officiis soluta a necessitatibus nam accusamus ex, provident placeat praesentium, cupiditate libero numquam vitae dolores blanditiis tenetur rerum mollitia deleniti amet.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, officiis soluta a necessitatibus nam accusamus ex, provident placeat praesentium, cupiditate libero numquam vitae dolores blanditiis tenetur rerum mollitia deleniti amet.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, officiis soluta a necessitatibus nam accusamus ex, provident placeat praesentium, cupiditate libero numquam vitae dolores blanditiis tenetur rerum mollitia deleniti amet.
+                        </p>
+                    </div>
+                </div>
+                <!---->
+                <div class="company_details_right_side sec8_part_Design_3">
+                    <h2>Web Developer</h2>
+                    <p style="color: #00A78E;">DM Elegent Team</p>
+                    <p>March 2020 - october - 2022</p>
+                </div>
+            </div>
+        </div>
+
+       <!--mobile view Section 8 -->
+       <div class="sec8_WorkExperience_body_div_main_2ndPart">
+            <div class="workName_main_div">
+                <h2 class="workName_h2">Graphic Designer</h2>
+                <p style="color: #00A78E;" class="WorkName_p1">Team Orio Designer Team</p>
+                <p class="WorkName_p2">March 2021 - August - 2022</p>
+            </div>
+
+            <div class="WorkDetails_main_div">
+                <div>
+                    <p class="Work_details_text">
+                        111111111 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, officiis soluta a necessitatibus nam accusamus ex, provident placeat praesentium, cupiditate libero numquam vitae dolores blanditiis tenetur rerum mollitia deleniti amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, officiis soluta a necessitatibus nam accusamus ex, provident placeat praesentium, cupiditate libero numquam vitae dolores blanditiis tenetur rerum mollitia deleniti amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, officiis soluta a necessitatibus nam accusamus ex, provident placeat praesentium, cupiditate libero numquam vitae dolores blanditiis tenetur rerum mollitia deleniti amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, officiis soluta a necessitatibus nam accusamus ex, provident placeat praesentium, cupiditate libero numquam vitae dolores blanditiis tenetur rerum mollitia deleniti amet.
+                    </p>
+                </div>
+            </div>
+
+            <div class="circle_main_div_sec_8">
+                <div class="circle_inner_div">
+                    <div style="background-color: #05AD88;" id="circle1"><p>01</p></div>
+                    <div id="circle2"><p>02</p></div>
+                    <div id="circle3"><p>03</p></div>
+                </div>
+            </div>
+
+
+       </div>
+
+       <!--Section 9 strat-->
+    <section class="section-9">
+        <div class="section-9-main">
+            <div class="section-9-main-cumllam-1">
+                <div class="section-9-main-cumllam-1-img">
+                    <img src="./images/avatar icon man .png" alt="">
+                </div>
+                <div class="section-9-main-cumllam-1-text">
+                    <h3>MD. Abidur Rahman</h3>
+                    <h1>Get To <br>Know Me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet obcaecati libero eius! Ex error hic aliquid, dolores magni voluptas atque vel sequi voluptate adipisci corrupti nihil, recusandae dignissimos maiores alias cupiditate cumque eum quod totam nesciunt porro. Sit, est nullaolor, sit amet consectetur adipisicing elit. Amet obcaecati libero eius! Ex maiores alias cupiditate cumque eum quod totam nesciunt porro. Sit, est nullaolor, sit amet consectetur adipisicing elit. Amet obcaecati libero eius! Ex error hic aliquid, dolores magni voluptas atque vel sequi voluptate adipisci corrupti nihil, recusandae dignissimos maiores alias cupiditate cumque eum quod totam nesciunt porro. Sit, est nulla.</p>
+                    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente quaerat minus a hic quasi fuga, deleniti officia explicabo omnis rem. Expedita neque sint vel molestias est voluptas, deserunt nobis aliquam?</h4>
+                </div>
+            </div>
+            <div class="section-9-main-cumllam-2">
+               
+                <div class="section-9-main-cumllam-2-text">
+                    <h3>MD. Abidur Rahman</h3>
+                    <h1>Get To <br>Know Me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet obcaecati libero eius! Ex error hic aliquid, dolores magni voluptas atque vel sequi voluptate adipisci corrupti nihil, recusandae dignissimos maiores alias cupiditate cumque eum quod totam nesciunt porro. Sit, est nullaolor, sit amet consectetur adipisicing elit. Amet obcaecati libero eius! Ex error hic aliquid, dolores magni voluptas atque vel sequi voluptate adipisci corrupti nihil, recusandae dignissimos maiores alias cupiditate cumque eum quod totam nesciunt porro. Sit, est nulla.</p>
+                    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente quaerat minus a hic quasi fuga, deleniti officia explicabo omnis rem. Expedita neque sint vel molestias est voluptas, deserunt nobis aliqelit. Sapiente quaerat minus a hic quasi fuga, deleniti officia explicabo omnis rem. Expedita neque sint vel molestias est voluptas, deserunt nobis aliquam?</h4>
+                </div>
+                <div class="section-9-main-cumllam-2-img">
+                    <img src="./images/avatar icon man .png" alt="">
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    <!--Section 9 end-->
+
+       <!--  Section 10  -->
+       <div class="Section_10_main_div">
+            <div class="sec10_left_rifght_div_main">
+                <div class="sec10_leftDiv_inner_div_MAIN">
+                    <!---->
+                    <div class="sec10_h2_div"><h2>Let's Talk?</h2></div>
+                    <div class="sec10_p_div_1">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam accusantium voluptatum autem quae odit illum sapiente, eum mollitia placeat. Architecto quibusdam tenetur error quasi pariatur fugiat distinctio eum facere qui.</p>
+                        </div>
+                        
+                    </div>
+                    <!---->
+                    <div class="sec10_circle_main_div">
+                        <div class="Circle_div_main_2">
+
+                        </div>
+                        <div class="circle_div_main_Outer_div" >
+                            <div class="Circle_div sec10_Circle_div_1"><p>01</p></div>
+                            <div class="Circle_div sec10_Circle_div_2"><p>02</p></div>
+                            <div class="Circle_div sec10_Circle_div_3"><p>03</p></div>
+                        </div>
+                    </div>
+                    <!---->
+                    <form action="" class="sec10_input_box_main_div">
+                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="Name">
+                        <input type="number" placeholder="Phone">
+                        <input class="Next_button" type="submit" name="" id="" value="Next">
+                    </form>
+                        
+                    
+                    
+
+
+                </div>
+
+                
+
+
+            </div>
+            <!---->
+            <div class="sec10_left_rifght_div_main" style="justify-content: center; margin-left: -5%;">
+                <iframe  src="https://www.youtube.com/embed/hf4k4OWlBfI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>          
+       </div>
+
+       <!--Section 11 start-->
+       <section class="section-11">
+        <div class="section-11-pbox">
+            <div class="section-11-pbox-box">
+                <h1>Leverance.</h1>
+                <p>Lorem, ipsum dolor.</p>
+                <p>Lorem, ipsum dolor.</p>
+                <p>Lorem, ipsum </p>
+                <h2><i class="fa-brands fa-youtube"></i>  <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-youtube"></i></h2>
+            </div>
+            <div class="section-11-pbox-box">
+                <h1>Get in Touch</h1>
+                <p> <i class="fa-solid fa-phone"></i> 0186545665</p>
+                <p><i class="fa-solid fa-envelope"></i> shahriatanvirmunna@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Lorem ipsum dolor sit amet.</p>
+               <button class="section-11-pbox-box-btn-1"> <i class="fa-brands fa-youtube"></i> Sent a messege</button>
+            </div>
+            <div class="section-11-pbox-box">
+                <h1>Our service</h1>
+            
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p></p>
+            </div>
+            <div class="section-11-pbox-box">
+                <h1>Popular Tag</h1>
+               <div class="section-11-pbox-box-butotn">
+                <div class="section-11-pbox-box-butotn-btn1">
+                    <button>Mobile</button>
+                </div>
+                <div class="section-11-pbox-box-butotn-btn2">
+                    <button>Development</button>
+                </div>
+               </div>
+           
+               <div class="section-11-pbox-box-butotn">
+                <div class="section-11-pbox-box-butotn-btn1">
+                    <button>Mobile</button>
+                </div>
+                <div class="section-11-pbox-box-butotn-btn2">
+                    <button>Development</button>
+                </div>
+               </div>
+           
+               <div class="section-11-pbox-box-butotn">
+                <div class="section-11-pbox-box-butotn-btn1">
+                    <button>Mobile</button>
+                </div>
+                <div class="section-11-pbox-box-butotn-btn2">
+                    <button>Development</button>
+                </div>
+               </div>
+           
+               <div class="section-11-pbox-box-butotn">
+                <div class="section-11-pbox-box-butotn-btn1">
+                    <button>Mobile</button>
+                </div>
+                <div class="section-11-pbox-box-butotn-btn2">
+                    <button>Development</button>
+                </div>
+               </div>
+           
+              
+            </div>
+        </div>
+        <div class="section-11-foder">
+            <div class="section-11-foder-h1"><h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae!</h1></div>
+            <div class="section-11-foder-h2"><h2>@ Lorem ipsum dolor sit amet consectetur.</h2></div>
+        </div>
+</section>
+
+        
+
+
+
+    </div>
+
+    
+
+
+
+
+
+
+<!--bodyEnd-->
+
+<script src="./index.js"></script>
+    
+</body>
+</html>

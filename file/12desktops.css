@@ -1,0 +1,249 @@
+
+
+
+
+   /* section-3 start */
+.section-3-card{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8rem;
+    width: 85%;
+
+   
+   
+   }
+   .section-3-card-detilies{
+   width: 35%;
+    background: #FFF;
+    margin-left: 2rem;
+   padding-bottom: 5rem;
+    text-align: center;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-radius: 1rem;
+   }
+   .section-3-card-detilies-img i{
+       /* background-color into   internal css */
+   font-size: 3.5rem;
+   border-radius: 50%;
+   background: rgb(144, 120, 120);
+   padding: 1.7rem;
+   margin-top: 4rem;
+   
+   }
+   .section-3-card-detilies-heding h2{
+       padding-top: 2.5rem;
+       padding-bottom: 2rem;
+       font-size: 2.3rem;
+   }
+   .section-3-card-detilies-detilies p{
+      
+       text-align:center;
+       padding: .3rem;
+       opacity: .7;
+       font-size: 1.09rem;
+       
+   }
+   
+   .section-3-button{
+       margin: 0 auto;
+       padding-top: 4rem;
+       margin-top: -8rem;
+       
+   }
+   .section-3-button button{
+       padding: 1.5rem 2rem;
+       background: rgb(51, 61, 200);
+       border-radius: 5rem;
+       color: #FFF;
+       border: none;
+     
+       margin-bottom: 7rem;
+       
+   }
+   
+   /* section-3 end */
+   
+/* <!-- section -6 start --> */
+
+
+
+
+
+
+.section-6-pbox-cbox-homebox-regular h3{
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  font-size:2rem ;
+ 
+  color: rgb(255, 255, 255);
+  
+
+}
+.section-6-pbox-cbox-homebox-box{
+    display: flex;
+   
+    flex-direction: column;
+    text-align: left;
+   width: 80%;
+   height: auto;
+  
+}
+.section-6-pbox-cbox-homebox-box h2{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+.section-6-pbox-cbox-homebox-box h1{
+    font-size: 3.4rem;
+    margin-top: 2rem;
+   
+}
+.section-6-pbox-cbox-homebox-box h4{
+    font-size: 1rem;
+    margin-top: .8rem;
+}
+.section-6-pbox-cbox-homebox-box hr{
+    margin-top: 1rem;
+}
+.section-6-pbox-cbox-homebox-box p{
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.section-6-pbox-cbox-homebox-box button{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    width: 50%;
+    height: 3.5rem;
+    margin-bottom: 2rem;
+    background: rgb(16, 24, 187);
+    border-radius: 20rem;
+    border: none;
+    color: #FFF;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+
+/* <!-- section -6 end --> */
+
+
+/* <!-- section -11 start --> */
+
+.section-11{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #212121;
+}
+.section-11-pbox{
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 8rem;
+    
+}
+.section-11-pbox-box{
+    width: 45%;
+    height: auto;
+    display: flex;
+    padding-left: 2.5rem;
+    text-align: left;
+    flex-direction: column;
+    margin-left: 2%;
+   /* background: rgb(147, 75, 75); */
+
+}
+.section-11-pbox-box h1{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2.3rem;
+    color: #0082ba;
+   
+}
+.section-11-pbox-box p{
+   
+    margin-bottom: 1rem;
+    
+    font-size: 1rem;
+    color: rgb(172, 172, 172);
+}
+
+.section-11-pbox-box h2 i{
+    margin-top: 1.8rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #17a1dc;
+    margin-right: 2%;
+}
+.section-11-pbox-box-btn-1{
+    width: 80%;
+    height: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    background-color: Transparent;
+    border: solid #EF77D7;
+    font-size: 1.3rem;
+}
+.section-11-pbox-box-butotn{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+.section-11-pbox-box-butotn-btn1{
+    width: 40%;
+    height: auto;
+    margin-right:.4rem;
+    margin-bottom: .4rem;
+}
+.section-11-pbox-box-butotn-btn1 button{
+    width: 100%;
+    font-size: 1.1rem;
+    border: .3rem solid rgb(80, 80, 80);
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    background:transparent;
+    
+}
+.section-11-pbox-box-butotn-btn2{
+    width: 60%;
+  
+  
+    margin-bottom: .4rem;
+}
+.section-11-pbox-box-butotn-btn2 button{
+    width: 100%;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    background:transparent;
+}
+.section-11-foder{
+    width: 68%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: row;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    font-size: .7rem;
+}
+.section-11-foder-h1{}
+.section-11-foder-h1 h1{}
+.section-11-foder-h2 {}
+.section-11-foder-h2 h2{}
+
+
+
+/* <!-- section -11 end --> */

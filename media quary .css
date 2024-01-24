@@ -1,0 +1,306 @@
+@media screen and (max-width: 90rem) {
+    html{
+        font-size: 55%;
+       
+    }
+   
+}
+@media screen and (max-width: 78rem) {
+    html{
+        font-size: 55%;
+        
+    }
+}
+@media screen and (max-width: 74rem) {
+    html{
+        font-size: 50%;
+        
+    }
+    
+}
+@media screen and (max-width: 64rem) {
+    html{
+        font-size: 45%;
+    }
+    .Navbar_ALign_main_div{
+        margin-left: 25%;
+    }
+}
+
+
+@media screen and (max-width: 45rem) {
+    .navbarForMobile_div_main{
+        display: block;
+        display: flex;
+        align-items: center;
+    
+    }
+
+    .navBar_main_div{
+        width: 30rem;
+        height: 41rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5rem;
+        margin-left: -31rem;
+        opacity: 98%;
+        box-shadow: .3rem .3rem 1rem rgb(188, 188, 188);
+    }
+    .Logo_Nav{
+       display: none;
+    }
+    .Navbar_website_TITLE_div{
+        display: none;
+    }
+    .Navbar_ALign_main_div{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0%;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 4rem;
+    }
+    .navBAr_items_div{
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        
+    }
+    .navBAr_items_div p{
+        margin-left: 20%;
+        color: rgb(107, 107, 107);
+    }
+    /* section 1 start */
+    .Section1_main_div{
+        flex-direction: column;
+        margin-top: 20rem;
+        width: 100%;
+        
+    }
+    .Section1_inner_flex_Left_div_main{
+        width: 100%;
+        margin-top: 15rem;
+    }
+    .Section1_inner_flex_Right_div_main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    }
+    .Section1_inner_flex_Right_div_main img{
+        width: 70%;
+        height: 90%;
+    }
+    
+    /* Section2 start here */
+    .section2_main_div{
+        flex-direction: column;
+        margin-top: 25rem;
+        width: 100%;
+    }
+    .section2_left_div_main{
+        width: 100%;
+        height: 47rem;
+        margin-top: 125rem;
+        position: absolute;
+        z-index: -1;
+    }
+    .section2_Right_div_main{
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .sec2_h3_div h3{
+        margin-left: 10%;
+    }
+    .sec2_p_text_div{
+        margin-left: 10%;
+    }
+    .uiDesign_main_div{
+        width: 80%;
+    }
+    .uidesign_progressBar{
+        width: 100%;
+    }
+    /* section 7 */
+    .section7_main_div{
+        height: auto;
+        width: 100%;
+    }
+    .What_client_say_div{
+        flex-direction: column;
+        height: auto;
+    }
+    .whatClientSay_left_div{
+        width: 100%;
+        height: 3.5rem;
+        margin-top: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .whatClientSay_left_div h2{
+        margin: 0;
+       
+    }
+    .whatClientSay_right_div{
+        margin-top: 1rem;
+        z-index: 1;
+    }
+    .section7Comment_div_Main{
+        flex-direction: column;
+    }
+    .sec7Comment_div_boDy_main{
+        width: 100%;
+    }
+    .sec7_bottom_part_4dot{
+        padding-bottom: 3rem;
+        padding-top: 1.3rem;
+    }
+
+
+    /* section8  start */
+    .sec8_WorkExperience_body_div_main{
+        display: none;
+        width: 100%;
+    }
+    .sec8_WorkExperience_body_div_main_2ndPart{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .workName_main_div{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .workName_main_div h2{
+        font-size: 2.4rem;
+        margin: 0;
+        margin: 2rem;
+    }
+    .workName_main_div p{
+        font-size: 1.7rem;
+        margin: 0;
+        margin-top: 1rem;
+    }
+
+    
+    .WorkDetails_main_div{
+        width: 100%;
+        height: auto;
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .WorkDetails_main_div div{
+        width: 95%;
+        border-radius: 1rem;
+        background-color: #05AD88;
+        box-shadow: .3rem .3rem 1rem rgb(181, 181, 181);
+    }
+    .WorkDetails_main_div div p{
+        text-align: justify;
+        font-size: 1.7rem;
+        line-height: 2.4rem;
+        padding: 2.3rem;
+        font-weight: 500;
+    }
+
+
+    .circle_main_div_sec_8{
+        width: 100%;
+        height: 2rem;
+        margin-top: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .circle_main_div_sec_8 .circle_inner_div{
+        width: 70%;
+        height: 50%;
+        background-color: #05AD88;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .circle_main_div_sec_8 .circle_inner_div div{
+        width: 4rem;
+        height: 4rem;
+        background-color: #F3FAFF;
+        border-radius: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2.5rem;
+        border: .5rem solid #05AD88;
+    }
+    .circle_main_div_sec_8 .circle_inner_div div p{
+        font-size: 1.7rem;
+    }
+    .sec8_WorkExperience_body_div_main_2ndPart{
+
+        width: 100%;
+    }
+
+    
+    /* Section 10 */
+    .Section_10_main_div{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .sec10_left_rifght_div_main{
+        width: 100%;
+
+    }
+    .sec10_leftDiv_inner_div_MAIN{
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec10_h2_div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    .sec10_p_div_1{
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    .sec10_p_div_1 DIV{
+        width: 90%;
+        
+    }
+    .sec10_circle_main_div{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 8rem;
+    }
+    .sec10_input_box_main_div{
+        margin-left: 7%;
+    }
+    .sec10_input_box_main_div .Next_button{
+        margin-left: 0%;
+    }
+    .sec10_left_rifght_div_main iframe{
+        margin-top: 5rem;
+        padding-bottom: 5re;
+    }
+    
+    
+    
+}
